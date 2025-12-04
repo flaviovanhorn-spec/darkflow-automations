@@ -2,6 +2,8 @@ import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Send, Mail, Video } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
+import { contactSchema } from '@/lib/contactSchema';
+import { submitToWebhook } from '@/lib/submitToWebhook';
 
 export default function ContactSection() {
   const ref = useRef(null);
@@ -17,16 +19,37 @@ export default function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Request Received!",
-      description: "I'll get back to you within 24 hours to schedule your free automation audit.",
-    });
-    
-    setFormData({ name: '', email: '', company: '', message: '' });
+
+    // Validate form data
+    const validation = contactSchema.safeParse(formData);
+    if (!validation.success) {
+      const firstError = validation.error.errors[0];
+      toast({
+        title: 'Please check your input',
+        description: firstError.message,
+        variant: 'destructive',
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Submit to webhook
+    const result = await submitToWebhook(validation.data);
+
+    if (result.success) {
+      toast({
+        title: "Thanks!",
+        description: "I'll review your processes and get back to you soon.",
+      });
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } else {
+      toast({
+        title: 'Something went wrong',
+        description: result.error || 'Please try emailing me directly at hello@mydomain.com',
+        variant: 'destructive',
+      });
+    }
+
     setIsSubmitting(false);
   };
 
