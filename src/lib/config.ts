@@ -3,4 +3,4 @@
 // Leave empty to disable that webhook.
 
 export const MAKE_WEBHOOK_URL = '';
-export const N8N_WEBHOOK_URL = '';
+export const N8N_WEBHOOK_URL = 'https://fvh.app.n8n.cloud/webhook/Contact_From_fvh';
