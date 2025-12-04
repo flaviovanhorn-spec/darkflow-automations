@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Target, Wrench, Lightbulb, Rocket } from 'lucide-react';
+import { Target, Lightbulb, Rocket } from 'lucide-react';
 
 const highlights = [
   { icon: Target, title: 'Focus', text: 'Solving real problems, not chasing shiny tools' },
-  { icon: Wrench, title: 'Tools', text: 'n8n, Make, Google Workspace, HubSpot, Power BI' },
   { icon: Lightbulb, title: 'Style', text: 'Simple solutions that grow with your business' },
   { icon: Rocket, title: 'Goal', text: 'More time for what matters, less busywork' },
 ];
