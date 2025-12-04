@@ -12,6 +12,7 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     company: '',
     message: '',
   });
@@ -41,7 +42,7 @@ export default function ContactSection() {
         title: "Thanks!",
         description: "I'll review your processes and get back to you soon.",
       });
-      setFormData({ name: '', email: '', company: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
     } else {
       toast({
         title: 'Something went wrong',
@@ -109,6 +110,20 @@ export default function ContactSection() {
                   placeholder="you@company.com"
                 />
               </div>
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                Phone <span className="text-muted-foreground">(optional)</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                className="input-glass"
+                placeholder="+1 (555) 123-4567"
+              />
             </div>
 
             <div className="mb-6">
