@@ -1,10 +1,7 @@
 import { Zap, Linkedin, Github } from 'lucide-react';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="py-12 border-t border-border">
+  return <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & tagline */}
@@ -13,7 +10,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <Zap className="w-4 h-4 text-background" />
               </div>
-              <span>Dark3D</span>
+              <span>fvh</span>
             </a>
             <p className="text-muted-foreground text-sm">
               Automation as a Service for small businesses and teams.
@@ -38,20 +35,10 @@ export default function Footer() {
 
           {/* Social links */}
           <div className="flex items-center gap-4">
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-            >
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-            >
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all">
               <Github className="w-5 h-5" />
             </a>
           </div>
@@ -63,6 +50,5 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
