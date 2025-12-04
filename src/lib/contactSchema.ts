@@ -1,5 +1,8 @@
 import { z } from 'zod';
 
+// Regex for phone: allows digits, spaces, +, -, parentheses
+const phoneRegex = /^[\d\s\+\-\(\)]*$/;
+
 export const contactSchema = z.object({
   name: z
     .string()
@@ -12,6 +15,13 @@ export const contactSchema = z.object({
     .min(1, { message: 'Email is required' })
     .email({ message: 'Please enter a valid email address' })
     .max(255, { message: 'Email must be less than 255 characters' }),
+  phone: z
+    .string()
+    .trim()
+    .max(30, { message: 'Phone must be less than 30 characters' })
+    .regex(phoneRegex, { message: 'Phone can only contain digits, spaces, +, -, and parentheses' })
+    .optional()
+    .or(z.literal('')),
   company: z
     .string()
     .trim()
