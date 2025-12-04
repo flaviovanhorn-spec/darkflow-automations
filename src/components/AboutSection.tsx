@@ -72,7 +72,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                className="glass-card p-6 flex items-start gap-4 group hover:scale-[1.02] transition-transform duration-300"
+                className="glass-card p-6 flex items-start gap-4 group hover:scale-[1.02] transition-transform duration-300 min-h-[120px]"
               >
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center shrink-0 group-hover:from-primary/30 group-hover:to-secondary/30 transition-colors">
                   <item.icon className="w-6 h-6 text-primary" />
