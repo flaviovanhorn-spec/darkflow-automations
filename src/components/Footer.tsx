@@ -46,7 +46,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border/50 text-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Dark3D Creative Automation Agency. All rights reserved.
+            © {currentYear} fvh. All rights reserved.
           </p>
         </div>
       </div>
