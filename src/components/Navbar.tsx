@@ -37,7 +37,7 @@ export default function Navbar() {
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
             <Zap className="w-5 h-5 text-background" />
           </div>
-          <span className="text-xs">fvh</span>
+          <span className="text-xs italic">fvh</span>
         </a>
 
         {/* Desktop Navigation */}
