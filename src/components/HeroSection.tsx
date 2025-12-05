@@ -27,9 +27,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Automate the Busywork.
+            Automate the Busywork
             <br />
-            <span className="text-gradient glow-text">Focus on the Work That Matters.</span>
+            <span className="text-gradient glow-text">Focus on the Work That Matters</span>
           </h1>
         </motion.div>
 
