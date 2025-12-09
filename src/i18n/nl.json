@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "about": "Over",
+    "solutions": "Oplossingen",
+    "playbooks": "Playbooks",
+    "process": "Proces",
+    "contact": "Contact",
+    "cta": "Aan de slag"
+  },
+  "hero": {
+    "title": "Automatiseer het repetitieve werk",
+    "highlight": "Richt je op het werk dat telt",
+    "subtitle": "We ontwerpen en bouwen maatwerk-automatiseringen die je systemen end-to-end verbinden, zodat je bedrijf minder draait op copy-paste en meer op autopilot.",
+    "ctaHint": "Vertel me hoe jouw dag er nu uitziet — ik laat je zien wat er als eerste geautomatiseerd kan worden.",
+    "ctaPrimary": "Vraag je gratis automatiseringsaudit aan",
+    "ctaSecondary": "Ontdek onze automation playbooks"
+  },
+  "about": {
+  "headline": {
+    "title": "Je automatiseringspartner,",
+    "highlight": "Meer dan alleen tools instellen"
+  },
+  "sectionTitle": "Hoe wij met je samenwerken",
+  "paragraphs": [
+    "We beginnen met luisteren. We kijken naar je dagelijkse werk: wat is repetitief, wat remt je af en wat zou je het liefst \"gewoon vanzelf\" zien gebeuren.",
+    "Van daaruit brengen we je processen in kaart, bepalen we waar automatisatie de meeste waarde toevoegt en ontwerpen we duidelijke, onderhoudbare workflows die je systemen end-to-end verbinden. Het doel is eenvoudig: betrouwbare automatisaties die je elke week uren teruggeven.",
+    "Of het nu gaat om het synchroniseren van je CRM met je inbox, automatisch rapportages genereren of supporttickets naar de juiste persoon sturen, alles wordt gebouwd om stabiel te draaien en met je bedrijf mee te schalen."
+  ],
+  "highlights": {
+    "focus": {
+      "title": "Focus",
+      "text": "Eerst de echte problemen oplossen en daarna de automatisatie kiezen die daar écht bij helpt."
+    },
+    "tools": {
+      "title": "Tools",
+      "text": "De tools zijn flexibel. We kiezen en verbinden wat het beste past bij jouw stack, zodat alles met elkaar praat en betrouwbaar draait."
+    },
+    "style": {
+      "title": "Stijl",
+      "text": "Heldere, onderhoudbare oplossingen die je team kan begrijpen, beheren en in de tijd verder kan verbeteren."
+    },
+    "goal": {
+      "title": "Doel",
+      "text": "Jou en je team meer tijd geven voor werk met hoge toegevoegde waarde in plaats van repetitieve taken."
+    }
+  }
+},
+
+"services": {
+  "headline": {
+    "titleBefore": "Wat we voor",
+    "highlight": "jouw bedrijf",
+    "titleAfter": "kunnen automatiseren"
+  },
+  "subtitle": "Elk bedrijf is anders, maar dit zijn de gebieden waar automatisering meestal de grootste impact heeft.",
+  "items": [
+    {
+      "id": "workflowAutomation",
+      "title": "Workflow-automatisering",
+      "description": "Zet repetitieve taken om in geautomatiseerde flows. Bespaar elke week uren aan werk en haal menselijke fouten uit terugkerende processen."
+    },
+    {
+      "id": "toolIntegration",
+      "title": "Toolintegraties",
+      "description": "We koppelen je apps zodat data automatisch stroomt. Geen copy-paste meer tussen systemen: je tools praten eindelijk met elkaar."
+    },
+    {
+      "id": "dashboardsReporting",
+      "title": "Dashboards & rapportage",
+      "description": "Krijg in één oogopslag zicht op je bedrijf met BI. Geautomatiseerde rapporten, geleverd wanneer jij ze nodig hebt, met de cijfers die ertoe doen."
+    },
+    {
+      "id": "crmSalesLanding",
+      "title": "CRM, sales & landingspagina’s",
+      "description": "We ontwerpen landingspagina’s die converteren en koppelen de flows in je CRM. Geen leads meer die wegglippen: automatische opvolging, lead scoring en pipeline-updates zodat elke kans wordt vastgelegd en opgevolgd."
+    },
+    {
+      "id": "operationsAdmin",
+      "title": "Operations & administratie",
+      "description": "Van facturatie tot bestandsorganisatie en onboarding van klanten: we automatiseren het administratieve werk dat je productieve uren opslokt."
+    },
+    {
+      "id": "maintenanceSupport",
+      "title": "Onderhoud & support",
+      "description": "Proactieve monitoring en doorlopende support om je automatiseringen gezond, betrouwbaar en in lijn met je groeiende bedrijf te houden."
+    }
+  ]
+},
+
+"playbooks": {
+  "headline": {
+    "titleBefore": "Automation",
+    "highlight": "playbooks"
+  },
+  "subtitle": "Voorbeelden van wat we samen kunnen bouwen — we passen alles aan op jouw tools en workflows.",
+  "ctaLearnMore": "Meer details",
+  "ctaBuildThis": "Bouw dit voor mij",
+  "items": [
+    {
+      "id": "leadCrmFollowup",
+      "title": "Lead → CRM → Follow-up",
+      "category": "Sales",
+      "summary": "We vangen leads automatisch op en starten gepersonaliseerde follow-ups.",
+      "detail": "Komt er een lead binnen via je website, formulier of advertentie? Die gaat automatisch je CRM in, krijgt de juiste tags en start een gepersonaliseerde e-mailreeks. Geen handmatig overtypen, geen vergeten follow-ups."
+    },
+    {
+      "id": "automatedOnboarding",
+      "title": "Geautomatiseerde klantonboarding",
+      "category": "Operations",
+      "summary": "Nieuwe klanten ontvangen een warm welkom zonder handwerk.",
+      "detail": "Nieuwe klant? Die krijgt automatisch een welkomstmail, er wordt een map voor hem aangemaakt, het project wordt opgezet in je workspace en je team krijgt een notificatie. Eerste indrukken: geregeld."
+    },
+    {
+      "id": "morningKpiSnapshot",
+      "title": "Ochtendoverzicht van KPI’s",
+      "category": "Reporting",
+      "summary": "Elke ochtend automatisch een mail met je belangrijkste cijfers.",
+      "detail": "Je begint de dag met een e-mail met de omzet van gisteren, supporttickets, websitebezoeken en andere kerncijfers. We trekken je databronnen automatisch samen en bezorgen je het overzicht — jij drinkt je koffie."
+    },
+    {
+      "id": "invoicesPayments",
+      "title": "Facturen en betalingsupdates",
+      "category": "Financiën",
+      "summary": "We volgen betalingen en informeren je team automatisch.",
+      "detail": "Wanneer een factuur betaald wordt, wordt je boekhoudpakket bijgewerkt, markeert je CRM de klant als actief en krijgt je team een melding. Te laat? Er gaan automatisch herinneringen uit."
+    },
+    {
+      "id": "smartTicketRouting",
+      "title": "Slim routeren van supporttickets",
+      "category": "Support",
+      "summary": "Tickets komen meteen bij de juiste persoon terecht.",
+      "detail": "Komt er een supportaanvraag binnen? Die wordt automatisch gecategoriseerd, toegewezen aan de juiste teamgenoot op basis van skills of beschikbaarheid en de klant krijgt direct een bevestiging."
+    },
+    {
+      "id": "smartScheduling",
+      "title": "Slimme afsprakenplanner",
+      "category": "Operations",
+      "summary": "Laat prospects en klanten zelf tijd inplannen met ingebouwde herinneringen.",
+      "detail": "Wil iemand een afspraak met je? Die kiest een moment dat past, je agenda wordt bijgewerkt, herinneringen gaan automatisch de deur uit en follow-ups worden klaargezet — zonder eindeloze mailwissels."
+    }
+  ]
+},
+
+"process": {
+  "headline": {
+    "titleBefore": "Hoe",
+    "highlight": "we met je samenwerken"
+  },
+  "subtitle": "Een simpel en transparant proces, van het eerste gesprek tot de lancering — en daarna.",
+  "steps": [
+    {
+      "id": "discovery",
+      "title": "Ontdekking",
+      "description": "We beginnen met een korte call om je tools, je workflows en de taken die je vertragen goed te begrijpen."
+    },
+    {
+      "id": "conceptDesign",
+      "title": "Concept & design",
+      "description": "We brengen je processen in kaart en ontwerpen simpele, visuele flows die precies laten zien wat we gaan automatiseren."
+    },
+    {
+      "id": "buildIntegrate",
+      "title": "Bouwen & integreren",
+      "description": "We zetten het plan om in werkende automatiseringen, koppelen je systemen en zorgen dat data soepel stroomt tussen de tools die je al gebruikt."
+    },
+    {
+      "id": "testRefine",
+      "title": "Testen & bijschaven",
+      "description": "We testen met echte data, vangen edge cases op en zorgen dat alles stabiel draait."
+    },
+    {
+      "id": "launchSupport",
+      "title": "Launch & support",
+      "description": "We gaan live met vertrouwen en blijven beschikbaar om bij te sturen terwijl je bedrijf groeit en verandert."
+    }
+  ]
+},
+
+"testimonials": {
+  "headline": {
+    "titleBefore": "Testimonials van",
+    "highlight": "partners"
+  },
+  "quote": {
+    "text": "We hebben eindelijk automatiseringen waar we op kunnen vertrouwen. Ons team besteedt minder tijd aan losse taken najagen en meer tijd aan het werk dat het bedrijf echt vooruit helpt.",
+    "name": "Carin van Mol",
+    "role": "HE Space Operations"
+  },
+  "cta": {
+    "title": "Werk met ons samen aan je volgende automatiseringsproject",
+    "body": "We werken samen met teams om automatiseringen te ontwerpen en te bouwen die repetitief werk wegnemen, meer overzicht geven en echte businessdoelen ondersteunen. Als je een automatiseringsproject plant en een partner wilt die echt om je resultaat geeft, laten we dan praten.",
+    "secondary": "Laten we bespreken waar automatisering je het meeste kan helpen.",
+    "button": "Begin het gesprek"
+  }
+},
+"contact": {
+  "headline": {
+    "titleBefore": "Vertel ons wat je",
+    "highlight": "tegenhoudt"
+  },
+  "subtitle": "Je hebt geen perfecte briefing nodig. Loop gewoon met ons door je dag heen: welke taken zijn repetitief, waar het werk vastloopt en op welke systemen je dagelijks vertrouwt. Wij brengen in kaart wat we kunnen automatiseren en waar dat de meeste impact heeft.",
+  "form": {
+    "nameLabel": "Naam *",
+    "namePlaceholder": "Je naam",
+    "emailLabel": "E-mail *",
+    "emailPlaceholder": "jij@bedrijf.nl",
+    "phoneLabel": "Telefoon",
+    "phoneOptional": "(optioneel)",
+    "phonePlaceholder": "+31 6 0000 0000",
+    "companyLabel": "Bedrijf",
+    "companyOptional": "(optioneel)",
+    "companyPlaceholder": "Naam van je bedrijf",
+    "messageLabel": "Hoe ziet een typische dag er voor jou uit? Wat zou je graag willen automatiseren? *",
+    "messagePlaceholder": "Vertel ons over de taken die je vertragen, de tools die je dagelijks gebruikt en wat je graag \"vanzelf\" zou zien gebeuren...",
+    "submitIdle": "Vraag je gratis automatiseringsscan aan",
+    "submitProcessing": "Bezig..."
+  },
+  "toast": {
+    "invalidTitle": "Controleer alsjeblieft je invoer",
+    "successTitle": "Bedankt!",
+    "successDescription": "We bekijken je processen en nemen snel contact met je op.",
+    "errorTitle": "Er ging iets mis",
+    "errorDescriptionFallback": "Probeer ons anders rechtstreeks te mailen op hello@mydomain.com"
+  },
+  "contactMethods": {
+    "emailLabel": "contact@fvhautomation.com",
+    "videoText": "Liever een videogesprek? Dan sturen we je een link."
+  }
+},
+"footer": {
+  "tagline": "Maatwerk automatiseringsoplossingen voor kleine en middelgrote bedrijven & teams.",
+  "nav": {
+    "solutions": "Oplossingen",
+    "process": "Proces",
+    "playbooks": "Playbooks",
+    "contact": "Contact"
+  },
+  "rights": "Alle rechten voorbehouden."
+}
+
+}

@@ -1,0 +1,246 @@
+{
+  "nav": {
+    "about": "About",
+    "solutions": "Solutions",
+    "playbooks": "Playbooks",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Get Started"
+  },
+
+
+  "hero": {
+    "title": "Automate the Busywork",
+    "highlight": "Focus on the Work that matters",
+    "subtitle": "We design and build custom automations that connect your systems end to end — so your business stops running on copy-paste and starts running on autopilot.",
+    "ctaHint": "Tell us how your day looks right now — We will show you what can be automated first.",
+    "ctaPrimary": "Request Your Free Automation Audit",
+  "ctaSecondary": "Explore Automation Playbooks"
+  },
+
+
+  "about": {
+  "headline": {
+    "title": "Your Automation Partner,",
+    "highlight": "Beyond Just Setting Up Tools"
+  },
+  "sectionTitle": "How We Work With You",
+  "paragraphs": [
+    "We start by listening. We look at your day-to-day work — what’s repetitive, what slows you down, and what you wish would “just happen” on its own.",
+    "From there, we map your processes, identify where automation adds the most value, and design clear, maintainable workflows that connect your systems end to end. The goal is simple: dependable automations that give you back hours every week.",
+    "Whether it’s syncing your CRM with your inbox, generating reports automatically, or routing support tickets to the right person, everything is built to run reliably and scale with your business."
+  ],
+  "highlights": {
+    "focus": {
+      "title": "Focus",
+      "text": "Solving real problems first, then choosing automation that actually supports them."
+    },
+    "tools": {
+      "title": "Tools",
+      "text": "The tools are flexible. I choose and connect whatever fits your stack so everything talks to each other and runs reliably."
+    },
+    "style": {
+      "title": "Style",
+      "text": "Clear, maintainable solutions your team can understand, operate and improve over time."
+    },
+    "goal": {
+      "title": "Goal",
+      "text": "Give you and your team more time for high-value work instead of repetitive busy-work."
+    }
+  }
+},
+
+"services": {
+  "headline": {
+    "titleBefore": "What can We",
+    "highlight": "Automate",
+    "titleAfter": "For You"
+  },
+  "subtitle": "Every business is different, but these are the common areas where automation creates the biggest impact.",
+  "items": [
+    {
+      "id": "workflowAutomation",
+      "title": "Workflow Automation",
+      "description": "Turn repetitive tasks into automated flows. Save hours every week and eliminate human error from routine processes."
+    },
+    {
+      "id": "toolIntegration",
+      "title": "Tool Integration",
+      "description": "Connect your apps so data flows automatically. No more copy-pasting between systems — your tools finally talk to each other."
+    },
+    {
+      "id": "dashboardsReporting",
+      "title": "Dashboards & Reporting",
+      "description": "See your business at a glance with BI. Automated reports delivered when you need them, with the metrics that matter."
+    },
+    {
+      "id": "crmSalesLanding",
+      "title": "CRM, Sales & Landing Pages",
+      "description": "Design high-converting landing pages and connect CRM flows. Never let a lead slip through the cracks. Automated follow-ups, lead scoring, and pipeline updates so every opportunity is tracked and actioned."
+    },
+    {
+      "id": "operationsAdmin",
+      "title": "Operations & Admin",
+      "description": "From invoicing to file organization to client onboarding — automate the admin work that eats your productive hours."
+    },
+    {
+      "id": "maintenanceSupport",
+      "title": "Maintenance & Support",
+      "description": "Proactive monitoring and ongoing support to keep your automations healthy, reliable, and aligned with how your business evolves."
+    }
+  ]
+},
+
+"playbooks": {
+  "headline": {
+    "titleBefore": "Automation",
+    "highlight": "Playbooks"
+  },
+  "subtitle": "Examples of what we can build together — we'll adapt everything to your tools and workflows.",
+  "ctaLearnMore": "Learn more",
+  "ctaBuildThis": "Build This For Me",
+  "items": [
+    {
+      "id": "leadCrmFollowup",
+      "title": "Lead → CRM → Follow-Up",
+      "category": "Sales",
+      "summary": "Capture leads automatically and trigger personalized follow-ups.",
+      "detail": "When a lead comes in from your website, form, or ad, it automatically goes into your CRM, gets tagged, and triggers a personalized email sequence. No manual data entry, no forgotten follow-ups."
+    },
+    {
+      "id": "automatedOnboarding",
+      "title": "Automated Client Onboarding",
+      "category": "Operations",
+      "summary": "Welcome new clients with zero manual steps.",
+      "detail": "New client signs up? They automatically get a welcome email, their folder is created, their project is set up in your workspace, and your team gets notified. First impressions, handled."
+    },
+    {
+      "id": "morningKpiSnapshot",
+      "title": "Morning KPI Snapshot",
+      "category": "Reporting",
+      "summary": "Daily email with your key metrics, automatically.",
+      "detail": "Wake up to an email showing yesterday's sales, support tickets, website visits, and whatever else matters. Your data sources are pulled together automatically and delivered to you — you just drink your coffee."
+    },
+    {
+      "id": "invoicesPayments",
+      "title": "Invoices & Payment Updates",
+      "category": "Finance",
+      "summary": "Track payments and notify your team automatically.",
+      "detail": "When an invoice is paid, your accounting software updates, your CRM marks the client as active, and your team gets notified. Overdue? Automatic reminders go out."
+    },
+    {
+      "id": "smartTicketRouting",
+      "title": "Smart Support Ticket Routing",
+      "category": "Support",
+      "summary": "Get tickets to the right person, instantly.",
+      "detail": "Support request comes in? It's automatically categorized, assigned to the right team member based on skill or availability, and the customer gets an instant acknowledgment."
+    },
+    {
+      "id": "smartScheduling",
+      "title": "Smart Meeting Scheduling",
+      "category": "Operations",
+      "summary": "Let prospects and clients book time on your calendar automatically with reminders built in.",
+      "detail": "Prospects or clients want to meet? They pick a slot that works for them, your calendar is updated, reminders go out automatically, and follow-ups are queued — without anyone emailing or texting back and forth."
+    }
+  ]
+},
+
+"process": {
+  "headline": {
+    "titleBefore": "How We",
+    "highlight": "Work Together"
+  },
+  "subtitle": "A simple, transparent process from first call to launch — and beyond.",
+  "steps": [
+    {
+      "id": "discovery",
+      "title": "Discovery",
+      "description": "We start with a quick call to understand your tools, workflows, and the tasks that slow you down."
+    },
+    {
+      "id": "conceptDesign",
+      "title": "Concept & Design",
+      "description": "We map your processes and design simple, visual flows showing exactly what will be automated."
+    },
+    {
+      "id": "buildIntegrate",
+      "title": "Build & Integrate",
+      "description": "We turn the blueprint into working automations, connect your systems, and make sure your data flows smoothly between the tools you already use."
+    },
+    {
+      "id": "testRefine",
+      "title": "Test & Refine",
+      "description": "We test with real data, catch edge cases, and make sure everything runs smoothly."
+    },
+    {
+      "id": "launchSupport",
+      "title": "Launch & Support",
+      "description": "We go live with confidence and stay available to adjust as your business grows and changes."
+    }
+  ]
+},
+
+"testimonials": {
+  "headline": {
+    "titleBefore": "Partners",
+    "highlight": "Testimonials"
+  },
+  "quote": {
+    "text": "We finally have automations we can trust. Our team spends less time chasing tasks and more time on the work that actually moves the business forward.",
+    "name": "Carin van Mol",
+    "role": "HE Space Operations"
+  },
+  "cta": {
+    "title": "Partner With us on Your Next Automation Project",
+    "body": "We collaborate with teams to design and implement automations that remove busywork, improve visibility, and support real business goals. If you’re planning an automation project and want a partner who cares about your success, let’s chat.",
+    "secondary": "Let's talk about where automation would help most.",
+    "button": "Start the Conversation"
+  }
+},
+
+"contact": {
+  "headline": {
+    "titleBefore": "Tell Me What's",
+    "highlight": "Slowing You Down"
+  },
+  "subtitle": "You don't need a perfect brief. Just walk me through your day — what tasks feel repetitive, where work gets stuck, and which systems you rely on. I'll map out what can be automated and where it will have the biggest impact.",
+  "form": {
+    "nameLabel": "Name *",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "you@company.com",
+    "phoneLabel": "Phone",
+    "phoneOptional": "(optional)",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Company",
+    "companyOptional": "(optional)",
+    "companyPlaceholder": "Your company name",
+    "messageLabel": "What does a typical day look like for you? What would you love to automate? *",
+    "messagePlaceholder": "Tell me about the tasks that slow you down, the tools you use every day, and what you wish 'just happened' automatically...",
+    "submitIdle": "Request Your Free Automation Audit",
+    "submitProcessing": "Processing..."
+  },
+  "toast": {
+    "invalidTitle": "Please check your input",
+    "successTitle": "Thanks!",
+    "successDescription": "I'll review your processes and get back to you soon.",
+    "errorTitle": "Something went wrong",
+    "errorDescriptionFallback": "Please try emailing me directly at hello@mydomain.com"
+  },
+  "contactMethods": {
+    "emailLabel": "contact@fvhautomation.com",
+    "videoText": "Prefer a video call? I'll send a link."
+  }
+},
+"footer": {
+  "tagline": "Tailored automation solutions for small and mid-sized businesses & teams.",
+  "nav": {
+    "solutions": "Solutions",
+    "process": "Process",
+    "playbooks": "Playbooks",
+    "contact": "Contact"
+  },
+  "rights": "All rights reserved."
+}
+    
+}

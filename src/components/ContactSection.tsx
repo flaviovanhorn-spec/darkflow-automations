@@ -4,10 +4,12 @@ import { Send, Mail, Video } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 import { contactSchema } from '@/lib/contactSchema';
 import { submitToWebhook } from '@/lib/submitToWebhook';
+import { useTranslation } from 'react-i18next';
 
 export default function ContactSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -26,7 +28,7 @@ export default function ContactSection() {
     if (!validation.success) {
       const firstError = validation.error.errors[0];
       toast({
-        title: 'Please check your input',
+        title: t('contact.toast.invalidTitle'),
         description: firstError.message,
         variant: 'destructive',
       });
@@ -39,14 +41,14 @@ export default function ContactSection() {
 
     if (result.success) {
       toast({
-        title: "Thanks!",
-        description: "I'll review your processes and get back to you soon.",
+        title: t('contact.toast.successTitle'),
+        description: t('contact.toast.successDescription'),
       });
       setFormData({ name: '', email: '', phone: '', company: '', message: '' });
     } else {
       toast({
-        title: 'Something went wrong',
-        description: result.error || 'Please try emailing me directly at hello@mydomain.com',
+        title: t('contact.toast.errorTitle'),
+        description: result.error || t('contact.toast.errorDescriptionFallback'),
         variant: 'destructive',
       });
     }
@@ -64,12 +66,10 @@ export default function ContactSection() {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-            Tell Me What's <span className="text-gradient">Slowing You Down</span>
+          {t('contact.headline.titleBefore')}{' '} <span className="text-gradient">{t('contact.headline.highlight')}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            You don't need a perfect brief. Just tell me about your day — what tasks 
-            feel repetitive, what's annoying, what tools you're using. I'll figure out 
-            what can be automated.
+           {t('contact.subtitle')} 
           </p>
         </motion.div>
 
@@ -84,7 +84,7 @@ export default function ContactSection() {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                  Name *
+                 {t('contact.form.nameLabel')}
                 </label>
                 <input
                   type="text"
@@ -93,12 +93,12 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="input-glass"
-                  placeholder="Your name"
+                  placeholder={t('contact.form.namePlaceholder')}
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                  Email *
+                  {t('contact.form.emailLabel')}
                 </label>
                 <input
                   type="email"
@@ -107,14 +107,14 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="input-glass"
-                  placeholder="you@company.com"
+                  placeholder={t('contact.form.emailPlaceholder')}
                 />
               </div>
             </div>
 
             <div className="mb-6">
               <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                Phone <span className="text-muted-foreground">(optional)</span>
+              {t('contact.form.phoneLabel')}{' '} <span className="text-muted-foreground">{t('contact.form.phoneOptional')}</span>
               </label>
               <input
                 type="tel"
@@ -122,13 +122,13 @@ export default function ContactSection() {
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 className="input-glass"
-                placeholder="+1 (555) 123-4567"
+                placeholder={t('contact.form.phonePlaceholder')}
               />
             </div>
 
             <div className="mb-6">
               <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                Company <span className="text-muted-foreground">(optional)</span>
+                {t('contact.form.companyLabel')}{' '} <span className="text-muted-foreground">{t('contact.form.companyOptional')}</span>
               </label>
               <input
                 type="text"
@@ -136,13 +136,13 @@ export default function ContactSection() {
                 value={formData.company}
                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                 className="input-glass"
-                placeholder="Your company name"
+                placeholder={t('contact.form.companyPlaceholder')}
               />
             </div>
 
             <div className="mb-6">
               <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                What does a typical day look like for you? What would you love to automate? *
+                {t('contact.form.messageLabel')}
               </label>
               <textarea
                 id="message"
@@ -151,7 +151,7 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="input-glass resize-none"
-                placeholder="Tell me about the tasks that slow you down, the tools you use every day, and what you wish 'just happened' automatically..."
+                placeholder={t('contact.form.messagePlaceholder')}
               />
             </div>
 
@@ -161,11 +161,11 @@ export default function ContactSection() {
               className="btn-primary w-full flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
-                <>Processing...</>
+                <>{t('contact.form.submitProcessing')}</>
               ) : (
                 <>
                   <Send className="w-5 h-5" />
-                  Request Your Free Automation Audit
+                  {t('contact.form.submitIdle')}
                 </>
               )}
             </button>
@@ -179,16 +179,16 @@ export default function ContactSection() {
           >
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-muted-foreground">
               <a
-                href="mailto:hello@mydomain.com"
+                href="mailto:contact@fvhautomation.com"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                hello@mydomain.com
+               {t('contact.contactMethods.emailLabel')}
               </a>
               <span className="hidden sm:block text-border">|</span>
               <span className="flex items-center gap-2">
                 <Video className="w-5 h-5" />
-                Prefer a video call? I'll send a link.
+                {t('contact.contactMethods.videoText')}
               </span>
             </div>
           </motion.div>

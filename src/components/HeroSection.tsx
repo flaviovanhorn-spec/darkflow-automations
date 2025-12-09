@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Hero3D from './Hero3D';
+import { useTranslation } from 'react-i18next';
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -27,9 +29,11 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Automate the Busywork
+            {t('hero.title')}
             <br />
-            <span className="text-gradient glow-text">Focus on the Work That Matters</span>
+            <span className="text-gradient glow-text">
+            {t("hero.highlight")}
+            </span>
           </h1>
         </motion.div>
 
@@ -39,9 +43,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10"
         >
-          I design and build custom automations using tools like n8n, Make, Google Workspace, 
-          HubSpot, and Power BI — so your business stops running on copy-paste and starts 
-          running on autopilot.
+          {t("hero.subtitle")}
         </motion.p>
 
         <motion.div
@@ -51,10 +53,10 @@ export default function HeroSection() {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-6"
         >
           <a href="#contact" className="btn-primary">
-            Request Your Free Automation Audit
+            {t("hero.ctaPrimary")}
           </a>
           <a href="#portfolio" className="btn-secondary">
-            Explore Automation Playbooks
+            {t("hero.ctaSecondary")}
           </a>
         </motion.div>
 
@@ -64,7 +66,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-sm text-muted-foreground"
         >
-          Tell me how your day looks right now — I'll show you what can be automated first.
+          {t("hero.ctaHint")}
         </motion.p>
       </div>
 
