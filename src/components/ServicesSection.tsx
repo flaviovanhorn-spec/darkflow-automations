@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { 
   Workflow, 
   Plug, 
@@ -11,41 +12,25 @@ import {
 } from 'lucide-react';
 
 const services = [
-  {
-    icon: Workflow,
-    title: 'Workflow Automation',
-    description: 'Turn repetitive tasks into automated flows. Save hours every week and eliminate human error from routine processes.',
-  },
-  {
-    icon: Plug,
-    title: 'Tool Integration',
-    description: 'Connect your apps with n8n & Make. No more copy-pasting between systems — your tools finally talk to each other.',
-  },
-  {
-    icon: BarChart3,
-    title: 'Dashboards & Reporting',
-    description: 'See your business at a glance with Power BI. Automated reports delivered when you need them, with the metrics that matter.',
-  },
-  {
-    icon: Users,
-    title: 'CRM & Sales Automation',
-    description: 'Never let a lead slip through the cracks. Automated follow-ups, lead scoring, and pipeline updates in HubSpot and beyond.',
-  },
-  {
-    icon: Settings,
-    title: 'Operations & Admin',
-    description: 'From invoicing to file organization to client onboarding — automate the admin work that eats your productive hours.',
-  },
-  {
-    icon: Headphones,
-    title: 'Maintenance & Support',
-    description: 'Automations need love too. Ongoing support to keep your workflows running smoothly as your business evolves.',
-  },
+
+  { icon: Workflow, key: 'workflowAutomation' },
+  { icon: Plug, key: 'toolIntegration' },
+  { icon: BarChart3, key: 'dashboardsReporting' },
+  { icon: Users, key: 'crmSalesLanding' },
+  { icon: Settings, key: 'operationsAdmin' },
+  { icon: Headphones, key: 'maintenanceSupport' },
+
 ];
 
 export default function ServicesSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const { t } = useTranslation();
+  const serviceItems = t('services.items', { returnObjects: true }) as {
+  id: string;
+  title: string;
+  description: string;
+}[];
 
   return (
     <section id="services" className="py-24 relative" ref={ref}>
@@ -57,18 +42,19 @@ export default function ServicesSection() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-            What I Can <span className="text-gradient">Automate</span> For You
+           {t('services.headline.titleBefore')}{' '} 
+           <span className="text-gradient">{t('services.headline.highlight')}
+            </span> {t('services.headline.titleAfter')}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Every business is different, but these are the common areas where automation 
-            creates the biggest impact.
+            {t('services.subtitle')}
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
-              key={service.title}
+              key={service.key}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -78,10 +64,10 @@ export default function ServicesSection() {
                 <service.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-display text-xl font-semibold mb-3 text-foreground group-hover:text-gradient transition-all duration-300">
-                {service.title}
+      {serviceItems[index].title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {service.description}
+               {serviceItems[index].description}
               </p>
             </motion.div>
           ))}

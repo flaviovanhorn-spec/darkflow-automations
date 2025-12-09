@@ -2,17 +2,20 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Target, Wrench, Lightbulb, Rocket } from 'lucide-react';
+import { useTranslation } from 'react-i18next'; 
 
 const highlights = [
-  { icon: Target, title: 'Focus', text: 'Solving real problems, not chasing shiny tools' },
-  { icon: Wrench, title: 'Tools', text: 'The tools are flexible. I choose and connect whatever fits your stack so everything talks to each other and runs reliably.' },
-  { icon: Lightbulb, title: 'Style', text: 'Simple solutions that grow with your business' },
-  { icon: Rocket, title: 'Goal', text: 'More time for what matters, less busywork' },
+   { icon: Target, key: 'focus' },
+  { icon: Wrench, key: 'tools' },
+  { icon: Lightbulb, key: 'style' },
+  { icon: Rocket, key: 'goal' },
 ];
 
 export default function AboutSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+ const { t } = useTranslation();
+ const paragraphs = t('about.paragraphs', { returnObjects: true }) as string[];
 
   return (
     <section id="about" className="py-24 relative section-glow" ref={ref}>
@@ -24,9 +27,11 @@ export default function AboutSection() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-            Your Automation Partner,
+            {t('about.headline.title')}
             <br />
-            <span className="text-gradient">Not Just Another Tool Guy</span>
+            <span className="text-gradient">
+              {t('about.headline.highlight')} 
+              </span>
           </h2>
         </motion.div>
 
@@ -39,23 +44,12 @@ export default function AboutSection() {
             className="glass-card p-8 neon-border"
           >
             <h3 className="font-display text-2xl font-semibold mb-4 text-foreground">
-              How I Work With You
+              {t('about.sectionTitle')}
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                I start by listening. Tell me about your day — what tasks feel repetitive, 
-                what makes you roll your eyes, what you wish "just happened" without you touching it.
-              </p>
-              <p>
-                Then I map out your processes, identify what can be automated, and build clean 
-                workflows that connect your tools. No complex jargon, no over-engineered systems. 
-                Just practical automations that save you hours every week.
-              </p>
-              <p>
-                Whether it's syncing your CRM with your inbox, generating reports automatically, 
-                or routing support tickets to the right person — I make sure it works reliably 
-                and grows with your business.
-              </p>
+              {paragraphs.map((text, index) => (
+    <p key={index}>{text}</p>
+  ))}
             </div>
           </motion.div>
 
@@ -68,7 +62,7 @@ export default function AboutSection() {
           >
             {highlights.map((item, index) => (
               <motion.div
-                key={item.title}
+                key={item.key}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
@@ -78,8 +72,8 @@ export default function AboutSection() {
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-foreground mb-1">{item.title}</h4>
-                  <p className="text-muted-foreground text-sm">{item.text}</p>
+                  <h4 className="font-display font-semibold text-foreground mb-1">{t(`about.highlights.${item.key}.title`)}</h4>
+                  <p className="text-muted-foreground text-sm">{t(`about.highlights.${item.key}.text`)}</p>
                 </div>
               </motion.div>
             ))}

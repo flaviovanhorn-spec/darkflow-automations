@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "about": "Sobre Nosotros",
+    "solutions": "Servicios",
+    "playbooks": "Playbooks",
+    "process": "Proceso",
+    "contact": "Contacto",
+    "cta": "Comenzar"
+  },
+  "hero": {
+    "title": "Automatiza el trabajo repetitivo",
+    "highlight": "Enfocate en el trabajo que importa",
+    "subtitle": "Diseñamos y construimos automatizaciones a medida que conectan tus sistemas de punta a punta, para que tu negocio deje de depender del copy-paste y empiece a funcionar casi en piloto automático.",
+    "ctaHint": "Cuéntame cómo es tu día a día en este momento, y te mostraré qué se puede automatizar primero.",
+    "ctaPrimary": "Solicita tu auditoría de automatización gratuita",
+    "ctaSecondary": "Explora los Playbooks de Automatización"
+  },
+  "about": {
+  "headline": {
+    "title": "Tu socio en automatización,",
+    "highlight": "Más que solo configurar herramientas"
+  },
+  "sectionTitle": "Cómo trabajamos contigo",
+  "paragraphs": [
+    "Empezamos escuchando. Vemos cómo es tu trabajo del día a día: qué es repetitivo, qué te frena y qué te gustaría que \"simplemente pasara\" de forma automática.",
+    "A partir de ahí mapeamos tus procesos, identificamos dónde la automatización aporta más valor y diseñamos flujos claros y mantenibles que conectan tus sistemas de punta a punta. El objetivo es simple: automatizaciones fiables que te devuelven horas cada semana.",
+    "Ya sea sincronizando tu CRM con tu bandeja de entrada, generando informes automáticamente o dirigiendo tickets de soporte a la persona adecuada, todo está diseñado para funcionar de forma estable y escalar con tu negocio."
+  ],
+  "highlights": {
+    "focus": {
+      "title": "Enfoque",
+      "text": "Resolver primero los problemas reales y después elegir la automatización que realmente los apoya."
+    },
+    "tools": {
+      "title": "Herramientas",
+      "text": "Las herramientas son flexibles. Elegimos y conectamos lo que mejor encaja con tu stack para que todo hable entre sí y funcione de forma fiable."
+    },
+    "style": {
+      "title": "Estilo",
+      "text": "Soluciones claras y mantenibles que tu equipo pueda entender, operar y mejorar con el tiempo."
+    },
+    "goal": {
+      "title": "Objetivo",
+      "text": "Darte a ti y a tu equipo más tiempo para el trabajo de alto valor en lugar de tareas repetitivas."
+    }
+  }
+},
+
+"services": {
+  "headline": {
+    "titleBefore": "Qué podemos",
+    "highlight": "automatizar",
+    "titleAfter": "para tu negocio"
+  },
+  "subtitle": "Cada negocio es distinto, pero estas son las áreas más comunes donde la automatización tiene más impacto.",
+  "items": [
+    {
+      "id": "workflowAutomation",
+      "title": "Automatización de flujos de trabajo",
+      "description": "Convierte tareas repetitivas en flujos automatizados. Ahorra horas cada semana y elimina errores humanos en los procesos rutinarios."
+    },
+    {
+      "id": "toolIntegration",
+      "title": "Integración de herramientas",
+      "description": "Conectamos tus aplicaciones para que los datos fluyan automáticamente. Sin más copiar y pegar entre sistemas: tus herramientas por fin se hablan entre sí."
+    },
+    {
+      "id": "dashboardsReporting",
+      "title": "Dashboards e informes",
+      "description": "Ve tu negocio de un vistazo con BI. Informes automatizados que llegan cuando los necesitas, con las métricas que realmente importan."
+    },
+    {
+      "id": "crmSalesLanding",
+      "title": "CRM, ventas y landing pages",
+      "description": "Diseñamos landing pages que convierten y conectamos los flujos de tu CRM. Ningún lead se pierde: seguimientos automáticos, lead scoring y actualización del pipeline para que cada oportunidad se registre y se gestione."
+    },
+    {
+      "id": "operationsAdmin",
+      "title": "Operaciones y administración",
+      "description": "Desde facturación hasta organización de archivos y onboarding de clientes: automatizamos el trabajo administrativo que consume tus horas productivas."
+    },
+    {
+      "id": "maintenanceSupport",
+      "title": "Mantenimiento y soporte",
+      "description": "Monitorización proactiva y soporte continuo para mantener tus automatizaciones sanas, fiables y alineadas con la evolución de tu negocio."
+    }
+  ]
+},
+
+"playbooks": {
+  "headline": {
+    "titleBefore": "Playbooks de",
+    "highlight": "automatización"
+  },
+  "subtitle": "Ejemplos de lo que podemos construir juntos — adaptamos todo a tus herramientas y flujos de trabajo.",
+  "ctaLearnMore": "Ver más detalles",
+  "ctaBuildThis": "Quiero automatizarlo",
+  "items": [
+    {
+      "id": "leadCrmFollowup",
+      "title": "Lead → CRM → Seguimiento",
+      "category": "Ventas",
+      "summary": "Capturamos leads automáticamente y activamos seguimientos personalizados.",
+      "detail": "Cuando entra un lead desde tu web, formulario o anuncio, se guarda automáticamente en tu CRM, se etiqueta y dispara una secuencia de emails personalizada. Sin introducción manual de datos ni seguimientos olvidados."
+    },
+    {
+      "id": "automatedOnboarding",
+      "title": "Onboarding automático de clientes",
+      "category": "Operaciones",
+      "summary": "Damos la bienvenida a nuevos clientes sin pasos manuales.",
+      "detail": "¿Nuevo cliente? Automáticamente recibe un email de bienvenida, se crea su carpeta, se configura su proyecto en tu espacio de trabajo y tu equipo recibe una notificación. Las primeras impresiones quedan cubiertas."
+    },
+    {
+      "id": "morningKpiSnapshot",
+      "title": "Resumen diario de KPIs",
+      "category": "Reporting",
+      "summary": "Correo diario con tus métricas clave, de forma automática.",
+      "detail": "Te despiertas con un email que muestra las ventas de ayer, tickets de soporte, visitas a la web y lo que realmente importa. Unimos tus fuentes de datos de forma automática y te lo entregamos en la bandeja de entrada — tú solo te tomas el café."
+    },
+    {
+      "id": "invoicesPayments",
+      "title": "Facturas y actualizaciones de pagos",
+      "category": "Finanzas",
+      "summary": "Seguimos los pagos y avisamos a tu equipo de forma automática.",
+      "detail": "Cuando se paga una factura, se actualiza tu programa de contabilidad, tu CRM marca al cliente como activo y tu equipo recibe una notificación. ¿Retraso? Se envían recordatorios automáticos."
+    },
+    {
+      "id": "smartTicketRouting",
+      "title": "Enrutado inteligente de tickets",
+      "category": "Soporte",
+      "summary": "Los tickets llegan a la persona adecuada al instante.",
+      "detail": "¿Entra una solicitud de soporte? Se clasifica automáticamente, se asigna al miembro del equipo adecuado según habilidad o disponibilidad y el cliente recibe una confirmación inmediata."
+    },
+    {
+      "id": "smartScheduling",
+      "title": "Agendado inteligente de reuniones",
+      "category": "Operaciones",
+      "summary": "Permitimos que clientes y prospectos reserven en tu agenda con recordatorios automáticos.",
+      "detail": "¿Alguien quiere reunirse contigo? Elige el horario que le encaja, tu calendario se actualiza, se envían recordatorios automáticos y se dejan preparados los seguimientos — sin cadenas infinitas de emails ni mensajes."
+    }
+  ]
+},
+
+"process": {
+  "headline": {
+    "titleBefore": "Cómo",
+    "highlight": "trabajamos contigo"
+  },
+  "subtitle": "Un proceso simple y transparente desde la primera llamada hasta el lanzamiento — y después.",
+  "steps": [
+    {
+      "id": "discovery",
+      "title": "Análisis inicial",
+      "description": "Empezamos con una llamada rápida para entender tus herramientas, tus flujos de trabajo y las tareas que más te frenan."
+    },
+    {
+      "id": "conceptDesign",
+      "title": "Concepto y diseño",
+      "description": "Mapeamos tus procesos y diseñamos flujos simples y visuales que muestran exactamente qué se va a automatizar."
+    },
+    {
+      "id": "buildIntegrate",
+      "title": "Construcción e integración",
+      "description": "Convertimos el plano en automatizaciones reales, conectamos tus sistemas y nos aseguramos de que los datos fluyan bien entre las herramientas que ya usas."
+    },
+    {
+      "id": "testRefine",
+      "title": "Test y ajustes",
+      "description": "Probamos con datos reales, cubrimos casos límite y nos aseguramos de que todo funcione de forma estable."
+    },
+    {
+      "id": "launchSupport",
+      "title": "Lanzamiento y soporte",
+      "description": "Lanzamos con confianza y seguimos disponibles para ajustar las automatizaciones a medida que tu negocio crece y cambia."
+    }
+  ]
+},
+
+"testimonials": {
+  "headline": {
+    "titleBefore": "Testimonios de",
+    "highlight": "partners"
+  },
+  "quote": {
+    "text": "Por fin tenemos automatizaciones en las que confiamos. Nuestro equipo pasa menos tiempo persiguiendo tareas y más tiempo en el trabajo que realmente hace avanzar el negocio.",
+    "name": "Carin van Mol",
+    "role": "HE Space Operations"
+  },
+  "cta": {
+    "title": "Seamos tu partner en tu próximo proyecto de automatización",
+    "body": "Colaboramos con equipos para diseñar e implementar automatizaciones que eliminan trabajo repetitivo, mejoran la visibilidad y apoyan objetivos de negocio reales. Si estás planificando un proyecto de automatización y quieres un partner que se interese de verdad por tus resultados, hablemos.",
+    "secondary": "Hablemos de dónde la automatización puede ayudar más.",
+    "button": "Empezar la conversación"
+  }
+},
+"contact": {
+  "headline": {
+    "titleBefore": "Cuéntame qué",
+    "highlight": "te está frenando"
+  },
+  "subtitle": "No necesitas un brief perfecto. Simplemente cuéntanos cómo es tu día: qué tareas son repetitivas, dónde se atasca el trabajo y en qué sistemas confías cada día. Nosotros trazaremos qué puede automatizarse y dónde tendría más impacto.",
+  "form": {
+    "nameLabel": "Nombre *",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "tu@empresa.com",
+    "phoneLabel": "Teléfono",
+    "phoneOptional": "(opcional)",
+    "phonePlaceholder": "+34 600 000 000",
+    "companyLabel": "Empresa",
+    "companyOptional": "(opcional)",
+    "companyPlaceholder": "Nombre de tu empresa",
+    "messageLabel": "¿Cómo es un día típico para ti? ¿Qué te gustaría automatizar? *",
+    "messagePlaceholder": "Cuéntanos qué tareas te frenan, qué herramientas usas cada día y qué te gustaría que \"simplemente ocurriera\" de forma automática...",
+    "submitIdle": "Pide tu auditoría de automatización gratuita",
+    "submitProcessing": "Procesando..."
+  },
+  "toast": {
+    "invalidTitle": "Por favor, revisa los datos del formulario",
+    "successTitle": "¡Gracias!",
+    "successDescription": "Revisaremos tus procesos y nos pondremos en contacto contigo pronto.",
+    "errorTitle": "Ha ocurrido un problema",
+    "errorDescriptionFallback": "Por favor, intenta escribirnos directamente a hello@mydomain.com"
+  },
+  "contactMethods": {
+    "emailLabel": "contact@fvhautomation.com",
+    "videoText": "¿Prefieres una videollamada? Te enviaremos un enlace."
+  }
+},
+
+"footer": {
+  "tagline": "Soluciones de automatización a medida para pequeñas y medianas empresas & equipos.",
+  "nav": {
+    "solutions": "Soluciones",
+    "process": "Proceso",
+    "playbooks": "Playbooks",
+    "contact": "Contacto"
+  },
+  "rights": "Todos los derechos reservados."
+}
+
+}

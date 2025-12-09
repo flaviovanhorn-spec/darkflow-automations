@@ -1,10 +1,13 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Quote, Star, Sparkles } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function TestimonialsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+    const { t } = useTranslation();
+
 
   return (
     <section className="py-24 relative section-glow" ref={ref}>
@@ -16,7 +19,7 @@ export default function TestimonialsSection() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-            Early <span className="text-gradient">Partners</span>
+           {t('testimonials.headline.titleBefore')}{' '} <span className="text-gradient">{t('testimonials.headline.highlight')}</span>
           </h2>
         </motion.div>
 
@@ -35,16 +38,15 @@ export default function TestimonialsSection() {
               ))}
             </div>
             <p className="text-muted-foreground italic mb-6 leading-relaxed">
-              "Your success story could be featured here. I'm building a collection 
-              of case studies from real automation projects."
+              {t('testimonials.quote.text')}
             </p>
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                 <span className="text-primary font-semibold">?</span>
               </div>
               <div>
-                <p className="font-semibold text-foreground">Your Name Here</p>
-                <p className="text-sm text-muted-foreground">Your Company</p>
+                <p className="font-semibold text-foreground">{t('testimonials.quote.name')}</p>
+                <p className="text-sm text-muted-foreground">{t('testimonials.quote.role')}</p>
               </div>
             </div>
           </motion.div>
@@ -61,17 +63,16 @@ export default function TestimonialsSection() {
           >
             <Sparkles className="w-10 h-10 text-primary mb-4" />
             <h3 className="font-display text-xl font-semibold mb-4 text-foreground">
-              Be the First Success Story
+             {t('testimonials.cta.title')}
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              I'm working with a small number of early-stage clients to build solid 
-              automation systems. Want to be one of the first case studies featured here?
+              {t('testimonials.cta.body')}
             </p>
             <p className="text-foreground font-medium mb-6">
-              Let's talk about your processes.
+             {t('testimonials.cta.secondary')}
             </p>
             <a href="#contact" className="btn-primary inline-block">
-              Start the Conversation
+              {t('testimonials.cta.button')}
             </a>
             
             {/* Decorative glow */}
