@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   //  #IMPORTANT for GitHub Pages
-  base: mode === "production" ? "/darkflow-automations/" : "/",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
