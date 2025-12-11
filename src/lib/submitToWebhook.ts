@@ -12,7 +12,10 @@ interface SubmitResult {
   error?: string;
 }
 
-export async function submitToWebhook(data: ContactFormData): Promise<SubmitResult> {
+export async function submitToWebhook(
+  data: ContactFormData,
+  language: string,
+ ): Promise<SubmitResult> {
   const webhookUrl = MAKE_WEBHOOK_URL || N8N_WEBHOOK_URL;
 
   if (!webhookUrl) {
@@ -26,7 +29,7 @@ export async function submitToWebhook(data: ContactFormData): Promise<SubmitResu
     ...data,
     timestamp: new Date().toISOString(),
     sourcePage: window.location.href,
-    language: 'en',
+    language,
   };
 
   try {

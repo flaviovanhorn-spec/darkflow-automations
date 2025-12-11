@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 export default function ContactSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -37,7 +37,7 @@ export default function ContactSection() {
     }
 
     // Submit to webhook
-    const result = await submitToWebhook(validation.data);
+    const result = await submitToWebhook(validation.data, i18n.language);
 
     if (result.success) {
       toast({
