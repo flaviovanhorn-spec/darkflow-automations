@@ -4,6 +4,7 @@ import { ContactFormData } from './contactSchema';
 interface WebhookPayload extends ContactFormData {
   timestamp: string;
   sourcePage: string;
+  language: string;
 }
 
 interface SubmitResult {
@@ -25,6 +26,7 @@ export async function submitToWebhook(data: ContactFormData): Promise<SubmitResu
     ...data,
     timestamp: new Date().toISOString(),
     sourcePage: window.location.href,
+    language: 'en',
   };
 
   try {
