@@ -22,14 +22,14 @@ const Index = () => {
         <link rel="canonical" href="https://dark3d.agency" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Dark3D - Custom Automation Agency" />
+        <meta property="og:title" content="Automation Agency" />
         <meta property="og:description" content="Automate the busywork and focus on what matters. Custom automation solutions for small businesses." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dark3d.agency" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Dark3D - Custom Automation Agency" />
+        <meta name="twitter:title" content="Automation Agency" />
         <meta name="twitter:description" content="Automate the busywork and focus on what matters. Custom automation solutions for small businesses." />
       </Helmet>
 
