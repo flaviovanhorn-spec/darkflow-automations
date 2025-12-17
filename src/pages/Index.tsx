@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Dark3D - Custom Automation Agency | n8n, Make, HubSpot, Power BI</title>
+        <title>Automation Agency</title>
         <meta 
           name="description" 
           content="Automate the busywork and focus on what matters. Custom automation solutions using n8n, Make, Google Workspace, HubSpot, and Power BI for small businesses and teams." 
